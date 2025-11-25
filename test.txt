@@ -1,0 +1,44 @@
+Robert Sanchez,26,Chelsea,GK,0,0,true,10
+Reece James,24,Chelsea,RB,2,3,true,0
+Thiago Silva,40,Chelsea,CB,1,0,true,0
+Levi Colwill,21,Chelsea,CB,0,1,true,0
+Ben Chilwell,27,Chelsea,LB,1,2,true,0
+Moises Caicedo,23,Chelsea,DM,1,1,true,0
+Enzo Fernandez,23,Chelsea,CM,3,4,true,0
+David Raya,28,Arsenal,GK,0,0,true,12
+Ben White,26,Arsenal,RB,1,2,true,0
+William Saliba,23,Arsenal,CB,2,0,true,0
+Gabriel Magalhaes,26,Arsenal,CB,3,0,true,0
+Oleksandr Zinchenko,27,Arsenal,LB,1,3,true,0
+Declan Rice,25,Arsenal,DM,4,5,true,0
+Martin Odegaard,25,Arsenal,AM,10,9,true,0
+Kai Havertz,25,Arsenal,CM,7,5,true,0
+Ederson,31,Man City,GK,0,0,true,14
+Kyle Walker,34,Man City,RB,0,2,true,0
+Ruben Dias,27,Man City,CB,1,0,true,0
+John Stones,29,Man City,CB,2,1,true,0
+Josko Gvardiol,22,Man City,LB,2,2,true,0
+Rodri,28,Man City,DM,6,7,true,0
+Bernardo Silva,30,Man City,CM,5,8,true,0
+Alisson,32,Liverpool,GK,0,0,true,13
+Trent Alexander-Arnold,26,Liverpool,RB,2,11,true,0
+Virgil van Dijk,33,Liverpool,CB,2,1,true,0
+Ibrahima Konate,25,Liverpool,CB,1,0,true,0
+Andy Robertson,30,Liverpool,LB,1,3,true,0
+Alexis Mac Allister,25,Liverpool,CM,5,6,true,0
+Dominik Szoboszlai,23,Liverpool,AM,4,5,true,0
+Harvey Elliott,21,Liverpool,RW,3,4,true,0
+Andre Onana,29,Man United,GK,0,0,true,11
+Diogo Dalot,25,Man United,RB,1,2,true,0
+Lisandro Martinez,26,Man United,CB,1,0,true,0
+Raphael Varane,31,Man United,CB,1,0,true,0
+Luke Shaw,29,Man United,LB,1,2,true,0
+Casemiro,32,Man United,DM,4,3,true,0
+Kobbie Mainoo,19,Man United,CM,2,2,true,0
+Guglielmo Vicario,28,Tottenham,GK,0,0,true,10
+Pedro Porro,25,Tottenham,RB,2,7,true,0
+Micky van de Ven,23,Tottenham,CB,2,0,true,0
+Cristian Romero,26,Tottenham,CB,3,0,true,0
+Destiny Udogie,22,Tottenham,LB,2,3,true,0
+Marc Guiu,19,Chelsea,CF,2,1,false,0
+Cole Palmer,23,Chelsea,AM,12,15,true,0
