@@ -1,0 +1,33 @@
+
+Player class
+Fields:
+       name (cannot be null or empty string, first + last name)
+       age (cannot be negative, must be above the age of 14)
+       position (only GK, CB, LB, RB, CM, DM, AM, LW, RW, CF allowed)
+       club (Only clubs in the premier league allowed, players must have a club)
+       shirt number (between 1 and 99)
+       no. of goals (cannot be negative)
+       no. of assists (cannot be negative)
+       games played (cannot be negative)
+       Clean sheets (only for GK, LB, RB and CB)
+       Height (in cm, )
+       Nationality
+       Preferred foot (either L or R)
+       Market value (in Dollars)
+       isAvailable (true or false)
+
+Methods:
+        searchPlayer() - by name
+        filterPlayers() - by club, age, shirt number, height, preferred foot, nationality
+        comparePlayers()
+        displayInfo() -
+        addPlayer()
+        removePlayer()
+        transferPlayer()
+        updateGoals()
+        updateAssists()
+
+
+
+
+

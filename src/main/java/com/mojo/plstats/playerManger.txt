@@ -1,0 +1,12 @@
+Data Structure: ArrayList
+
+Methods:
+        addPlayer(Player player) - add new player if the player does not already exist
+        removePlayer(String name) - remove a player by name
+        searchPlayer(String name) - return a player that has the name
+        filterPlayer( )-  return all players that have the age/club/goals/assists/nationality
+        highestScorers() - return top 10 players with the most goals
+        mostAssists() - return top 10 players with most assists
+        transferPlayer(String name, String newClub) - change the club of the player with provided name to newClub
+
+
