@@ -9,6 +9,7 @@ public abstract class Player {
     private String position;
     private int goals;
     private int assists;
+
     private boolean isAvailable;
     private int height;
     private String nationality;
@@ -82,14 +83,14 @@ public abstract class Player {
     }
 
     private int validateHeight(int height) {
-        if (height < 100 || height > 200) {
+        if (height < 100 || height > 250) {
             throw new IllegalArgumentException("Enter a valid height");
         }
         return height; //minor change
     }
 
     private String validatePreferredFoot(String preferredFoot) {
-        if (!preferredFoot.equalsIgnoreCase("L") || !preferredFoot.equalsIgnoreCase("R")) {
+        if (!preferredFoot.equalsIgnoreCase("L") && !preferredFoot.equalsIgnoreCase("R")) {
             throw new IllegalArgumentException("Preferred foot can only be Left(L) or Right(R)");
         }
         return preferredFoot;
@@ -143,8 +144,21 @@ public abstract class Player {
 
     public String displayInfo() {
         return String.format(
-                "Name: %s%nAge: %d%nClub: %s%nPosition: %s%nGoals: %d%nAssists: %d%nAvailable: %b",
-                name, age, club, position, goals, assists, isAvailable
+                """
+                Name: %s
+                Age: %d
+                Club: %s
+                Position: %s
+                Goals: %d
+                Assists: %d
+                Available: %b
+                Height: %d cm
+                Nationality: %s
+                Preferred Foot: %s
+                Market Value: %.2f million
+                """,
+                name, age, club, position, goals, assists, isAvailable,
+                height, nationality, preferredFoot, marketValue
         );
     }
 
@@ -160,3 +174,4 @@ public abstract class Player {
         return isAvailable;
     }
 }
+

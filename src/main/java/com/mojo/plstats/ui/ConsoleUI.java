@@ -82,7 +82,22 @@ public class ConsoleUI {
         System.out.print("Available? (true/false): ");
         boolean isAvailable = scanner.nextBoolean();
 
+        System.out.print("Height (cm): ");
+        int height = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Nationality: ");
+        String nationality = scanner.nextLine();
+
+        System.out.print("Preferred Foot (L/R): ");
+        String preferredFoot = scanner.nextLine().trim().toUpperCase();
+
+        System.out.print("Market Value (million): ");
+        double marketValue = scanner.nextDouble();
+        scanner.nextLine();
+
         int cleanSheets = 0;
+
         if (position.equalsIgnoreCase("GK")) {
             System.out.print("Clean Sheets: ");
             cleanSheets = scanner.nextInt();
@@ -91,9 +106,9 @@ public class ConsoleUI {
 
         Player newPlayer;
         if (position.equalsIgnoreCase("GK")) {
-            newPlayer = new Goalkeeper(name, age, club, position, goals, assists, isAvailable, cleanSheets);
+            newPlayer = new Goalkeeper(name, age, club, position, goals, assists, isAvailable, height, nationality, preferredFoot, marketValue, cleanSheets);
         } else {
-            newPlayer = new OutfieldPlayer(name, age, club, position, goals, assists, isAvailable);
+            newPlayer = new OutfieldPlayer(name, age, club, position, goals, assists, isAvailable, height, nationality, preferredFoot, marketValue);
         }
 
         if (manager.addPlayer(newPlayer)) {
@@ -104,7 +119,6 @@ public class ConsoleUI {
     }
 
     private void showAllPlayersUI() {
-        // TODO
         System.out.println("\n=== ALL PLAYERS ===");
 
         List<Player> players = manager.getAllPlayers();
@@ -115,8 +129,9 @@ public class ConsoleUI {
         }
 
         for (Player p : players) {
+            System.out.println("---------------------------------------------------");
             System.out.println(p.displayInfo());
-            System.out.println("--------------------------------");
+            System.out.println("---------------------------------------------------\n");
         }
     }
 

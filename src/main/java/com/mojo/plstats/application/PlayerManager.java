@@ -85,7 +85,7 @@ public class PlayerManager implements PlayerAPI {
             System.out.println(player2 + " Total G/A: " + statsP2);
         } else if (statsP2 > statsP1) {
             System.out.println(player2 + " leads. Total G/A: " + statsP2);
-            System.out.println(player1 + "Total G/A: " + statsP1);
+            System.out.println(player1 + " Total G/A: " + statsP1);
         } else {
             System.out.println("Tie. Both players have " + statsP1 + " G/A.");
         }
