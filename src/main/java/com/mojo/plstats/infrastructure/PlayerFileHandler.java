@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PlayerFileHandler {
 
-    // ========= SAVE PLAYERS =========
+    // SAVE PLAYERS FROM A FILE
     public static void savePlayersToFile(List<Player> players, String filePath) {
         try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(filePath))) {
 

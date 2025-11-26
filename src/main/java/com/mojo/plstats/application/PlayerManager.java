@@ -7,10 +7,10 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PlayerManager implements PlayerAPI {
-    private ArrayList<Player> players;  //private ArrayList<type> variableNAme;
+    private ArrayList<Player> players;
 
     public PlayerManager() {
-        players = new ArrayList<>();  //constructor
+        players = new ArrayList<>();
     }
 
     public boolean addPlayer(Player player) {
