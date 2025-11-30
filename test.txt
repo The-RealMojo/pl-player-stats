@@ -22,9 +22,8 @@ GK,Andre Onana,29,Man United,GK,0,1,true,190,Cameroon,R,35.0,11
 OUT,Lisandro Martinez,26,Man United,CB,1,1,true,175,Argentina,L,30.0,0
 OUT,Bruno Fernandes,30,Man United,AM,6,9,true,179,Portugal,R,65.0,0
 OUT,Marcus Rashford,27,Man United,LW,8,4,true,185,England,R,55.0,0
-OUT,Rasmus Hojlund,22,Man United,CF,7,3,true,191,Denmark,L,60.0,0
+OUT,Rasmus Hojlund,22,Arsenal,CF,7,3,true,191,Denmark,L,60.0,0
 OUT,Mojo Salisu,19,Chelsea,CF,10,5,false,185,Nigeria,R,30.0,0
-OUT,Mojo Salisu,19,Crystal Palace,CF,10,5,false,185,Nigeria,R,30.0,0
 GK,David Raya,28,Arsenal,GK,0,1,true,183,Spain,R,28.0,12
 OUT,William Saliba,23,Arsenal,CB,2,0,true,192,France,R,70.0,0
 OUT,Martin Odegaard,26,Arsenal,AM,8,10,true,178,Norway,L,75.0,0
@@ -50,4 +49,3 @@ OUT,Lisandro Martinez,26,Man United,CB,1,1,true,175,Argentina,L,30.0,0
 OUT,Bruno Fernandes,30,Man United,AM,6,9,true,179,Portugal,R,65.0,0
 OUT,Marcus Rashford,27,Man United,LW,8,4,true,185,England,R,55.0,0
 OUT,Rasmus Hojlund,22,Man United,CF,7,3,true,191,Denmark,L,60.0,0
-OUT,Mojo Salisu,19,Crystal Palace,CF,10,5,false,185,Nigeria,R,30.0,0

@@ -40,11 +40,13 @@ public class PlayerManager implements PlayerAPI {
     }
 
     public boolean transferPlayer(String name, String newClub) {
-        if (searchPlayer(name) != null) {
-            searchPlayer(name).setClub(newClub);
-            return true;
+        Player p = searchPlayer(name);
+        if (p == null) {
+            return false;
         }
-        return false;
+
+        p.setClub(newClub);
+        return true;
     }
 
     public List<Player> highestScorers() {
