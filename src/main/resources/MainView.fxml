@@ -14,7 +14,7 @@
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <Label text="Premier League Player Manager"
+    <Label text="Premier League Player Management System"
            style="-fx-font-size: 26px; -fx-font-weight: bold;" />
 
     <Button text="View All Players" fx:id="btnShowAll" prefWidth="220"/>
