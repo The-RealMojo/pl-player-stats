@@ -21,6 +21,8 @@
     <Button text="Add Player" fx:id="btnAdd" prefWidth="220"/>
     <Button text="Search Player" fx:id="btnSearch" prefWidth="220"/>
     <Button text="Filter Players" fx:id="btnFilter" prefWidth="220"/>
+    <Button text="Highest Scorers" fx:id="btnHighestScorers" prefWidth="220"/>
+    <Button text="Most Assists" fx:id="btnMostAssists" prefWidth="220"/>
     <Button text="Transfer Player" fx:id="btnTransfer" prefWidth="220"/>
     <Button text="Compare Players" fx:id="btnCompare" prefWidth="220"/>
     <Button text="Save to File" fx:id="btnSave" prefWidth="220"/>

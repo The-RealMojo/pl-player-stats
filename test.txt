@@ -26,4 +26,5 @@ OUT,Rasmus Hojlund,22,Arsenal,CF,7,3,true,191,Denmark,L,60.0,0
 OUT,Mojo Salisu,19,Chelsea,CF,10,5,false,185,Nigeria,R,30.0,0
 OUT,Rasmus Hojlund,22,Man United,CF,7,3,true,191,Denmark,L,60.0,0
 GK,SEssegnon,18,Arsenal,GK,0,0,false,120,SPAIN,R,7.0,2
-OUT,Jaden Patrick,24,Liverpool,LB,6,8,false,148,POLAND,R,3.0,0
+OUT,Jaden Patrick,24,Chelsea,LB,6,8,false,148,POLAND,R,3.0,0
+

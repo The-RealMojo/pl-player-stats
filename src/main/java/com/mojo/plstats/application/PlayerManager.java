@@ -78,20 +78,33 @@ public class PlayerManager implements PlayerAPI {
         return filteredPlayers;
     }
 
-    public void comparePlayers(String player1, String player2) {
-        int statsP1 = searchPlayer(player1).getGoals() + searchPlayer(player1).getAssists();
-        int statsP2 = searchPlayer(player2).getGoals() + searchPlayer(player2).getAssists();
+    public String comparePlayers(String player1, String player2) {
+        Player p1 = searchPlayer(player1);
+        Player p2 = searchPlayer(player2);
 
-        if(statsP1 > statsP2) {
-            System.out.println(player1 + " leads. Total G/A: " + statsP1);
-            System.out.println(player2 + " Total G/A: " + statsP2);
-        } else if (statsP2 > statsP1) {
-            System.out.println(player2 + " leads. Total G/A: " + statsP2);
-            System.out.println(player1 + " Total G/A: " + statsP1);
-        } else {
-            System.out.println("Tie. Both players have " + statsP1 + " G/A.");
+        if (p1 == null && p2 == null) {
+            return "Both players not found: " + player1 + " and " + player2;
+        } else if (p1 == null) {
+            return "Player not found: " + player1;
+        } else if (p2 == null) {
+            return "Player not found: " + player2;
         }
 
+        int statsP1 = p1.getGoals() + p1.getAssists();
+        int statsP2 = p2.getGoals() + p2.getAssists();
+
+        StringBuilder result = new StringBuilder();
+        if(statsP1 > statsP2) {
+            result.append(player1).append(" leads. Total G/A: ").append(statsP1).append("\n");
+            result.append(player2).append(" Total G/A: ").append(statsP2);
+        } else if (statsP2 > statsP1) {
+            result.append(player2).append(" leads. Total G/A: ").append(statsP2).append("\n");
+            result.append(player1).append(" Total G/A: ").append(statsP1);
+        } else {
+            result.append("Tie. Both players have ").append(statsP1).append(" G/A.");
+        }
+
+        return result.toString();
     }
 
     public List<Player> getAllPlayers() {

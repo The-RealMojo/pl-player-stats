@@ -108,9 +108,11 @@ public class ConsoleUI {
 
         Player newPlayer;
         if (position.equalsIgnoreCase("GK")) {
-            newPlayer = new Goalkeeper(name, age, club, position, goals, assists, isAvailable, height, nationality, preferredFoot, marketValue, cleanSheets);
+            newPlayer = new Goalkeeper(name, age, club, position, goals, assists, isAvailable, height, nationality,
+                    preferredFoot, marketValue, cleanSheets);
         } else {
-            newPlayer = new OutfieldPlayer(name, age, club, position, goals, assists, isAvailable, height, nationality, preferredFoot, marketValue);
+            newPlayer = new OutfieldPlayer(name, age, club, position, goals, assists, isAvailable, height, nationality,
+                    preferredFoot, marketValue);
         }
 
         if (manager.addPlayer(newPlayer)) {
@@ -160,11 +162,13 @@ public class ConsoleUI {
 
         System.out.print("Club: ");
         String club = scanner.nextLine();
-        if (club.isEmpty()) club = null;
+        if (club.isEmpty())
+            club = null;
 
         System.out.print("Position: ");
         String position = scanner.nextLine();
-        if (position.isEmpty()) position = null;
+        if (position.isEmpty())
+            position = null;
 
         System.out.print("Age: ");
         String ageInput = scanner.nextLine();
@@ -230,10 +234,9 @@ public class ConsoleUI {
         System.out.print("Second player: ");
         String p2 = scanner.nextLine();
 
-        manager.comparePlayers(p1, p2);
+        String result = manager.comparePlayers(p1, p2);
+        System.out.println(result);
     }
-
-
 
     private void saveUI() {
         // TODO
@@ -265,6 +268,7 @@ public class ConsoleUI {
             System.out.println("Error loading file: " + e.getMessage());
         }
     }
+
     private void sortingMenu() {
         boolean loop = true;
 
