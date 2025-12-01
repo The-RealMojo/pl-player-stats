@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10" alignment="CENTER"
+      fx:controller="com.mojo.plstats.ui.ViewPlayersController">
+
+    <Label text="All Players" style="-fx-font-size: 24;" />
+
+    <TableView fx:id="playersTable" prefWidth="700" prefHeight="500">
+        <columns>
+            <TableColumn text="Name" prefWidth="120" fx:id="colName"/>
+            <TableColumn text="Age" prefWidth="60" fx:id="colAge"/>
+            <TableColumn text="Club" prefWidth="100" fx:id="colClub"/>
+            <TableColumn text="Position" prefWidth="80" fx:id="colPosition"/>
+            <TableColumn text="Goals" prefWidth="60" fx:id="colGoals"/>
+            <TableColumn text="Assists" prefWidth="60" fx:id="colAssists"/>
+        </columns>
+    </TableView>
+
+    <Button text="Back" fx:id="btnBack" prefWidth="150"/>
+
+</VBox>

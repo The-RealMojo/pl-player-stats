@@ -98,5 +98,64 @@ public class PlayerManager implements PlayerAPI {
         return players;
     }
 
+    public List<Player> sortByAge() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getAge));
+        return sorted;
+    }
+
+    public List<Player> sortByHeight() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getHeight).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByGoals() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getGoals).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByAssists() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getAssists).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByName() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getName).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByMarketValue() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getMarketValue).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByNationality() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getNationality).reversed());
+        return sorted;
+    }
+
+    public List<Player> sortByPosition() {
+        List<Player> sorted = new ArrayList<>(players);
+        sorted.sort(Comparator.comparing(Player::getPosition).reversed());
+        return sorted;
+    }
+
+    private static PlayerManager instance;
+
+    public static PlayerManager getInstance() {
+        if (instance == null) instance = new PlayerManager();
+        return instance;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
 
 }

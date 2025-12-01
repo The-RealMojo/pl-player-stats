@@ -173,4 +173,19 @@ public abstract class Player {
     public boolean isAvailable() {
         return isAvailable;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Player)) return false;
+
+        Player other = (Player) obj;
+        return this.getName().equalsIgnoreCase(other.getName())
+                && this.getClub().equalsIgnoreCase(other.getClub());
+    }
+
+    @Override
+    public int hashCode() {
+        return (getName().toLowerCase() + getClub().toLowerCase()).hashCode();
+    }
 }

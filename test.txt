@@ -24,28 +24,6 @@ OUT,Bruno Fernandes,30,Man United,AM,6,9,true,179,Portugal,R,65.0,0
 OUT,Marcus Rashford,27,Man United,LW,8,4,true,185,England,R,55.0,0
 OUT,Rasmus Hojlund,22,Arsenal,CF,7,3,true,191,Denmark,L,60.0,0
 OUT,Mojo Salisu,19,Chelsea,CF,10,5,false,185,Nigeria,R,30.0,0
-GK,David Raya,28,Arsenal,GK,0,1,true,183,Spain,R,28.0,12
-OUT,William Saliba,23,Arsenal,CB,2,0,true,192,France,R,70.0,0
-OUT,Martin Odegaard,26,Arsenal,AM,8,10,true,178,Norway,L,75.0,0
-OUT,Bukayo Saka,23,Arsenal,RW,12,9,true,178,England,L,120.0,0
-OUT,Gabriel Jesus,27,Arsenal,CF,6,4,true,175,Brazil,R,55.0,0
-GK,Ederson Moraes,31,Man City,GK,0,1,true,188,Brazil,R,40.0,14
-OUT,Ruben Dias,27,Man City,CB,1,1,true,187,Portugal,R,70.0,0
-OUT,Kevin De Bruyne,33,Man City,AM,7,11,true,181,Belgium,R,60.0,0
-OUT,Phil Foden,24,Man City,LW,10,8,true,171,England,L,95.0,0
-OUT,Erling Haaland,24,Man City,CF,27,5,true,195,Norway,L,180.0,0
-GK,Alisson Becker,32,Liverpool,GK,0,0,true,191,Brazil,R,45.0,15
-OUT,Virgil van Dijk,33,Liverpool,CB,3,1,true,193,Netherlands,R,35.0,0
-OUT,Trent Alexander-Arnold,26,Liverpool,RB,4,10,true,180,England,R,70.0,0
-OUT,Mohamed Salah,32,Liverpool,RW,16,7,true,175,Egypt,L,65.0,0
-OUT,Darwin Nunez,25,Liverpool,CF,11,6,true,187,Uruguay,R,55.0,0
-GK,Robert Sanchez,26,Chelsea,GK,0,0,true,197,Spain,R,30.0,9
-OUT,Thiago Silva,40,Chelsea,CB,1,0,true,183,Brazil,R,2.0,0
-OUT,Enzo Fernandez,23,Chelsea,CM,3,4,true,178,Argentina,R,70.0,0
-OUT,Cole Palmer,22,Chelsea,RW,10,7,true,185,England,L,80.0,0
-OUT,Nicolas Jackson,23,Chelsea,CF,9,4,true,186,Senegal,R,45.0,0
-GK,Andre Onana,29,Man United,GK,0,1,true,190,Cameroon,R,35.0,11
-OUT,Lisandro Martinez,26,Man United,CB,1,1,true,175,Argentina,L,30.0,0
-OUT,Bruno Fernandes,30,Man United,AM,6,9,true,179,Portugal,R,65.0,0
-OUT,Marcus Rashford,27,Man United,LW,8,4,true,185,England,R,55.0,0
 OUT,Rasmus Hojlund,22,Man United,CF,7,3,true,191,Denmark,L,60.0,0
+GK,SEssegnon,18,Arsenal,GK,0,0,false,120,SPAIN,R,7.0,2
+OUT,Jaden Patrick,24,Liverpool,LB,6,8,false,148,POLAND,R,3.0,0

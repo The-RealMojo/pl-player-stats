@@ -14,7 +14,7 @@ public class ConsoleUI {
     private Scanner scanner;
 
     public ConsoleUI() {
-        manager = new PlayerManager();
+        manager = PlayerManager.getInstance();
         scanner = new Scanner(System.in);
     }
 
@@ -33,6 +33,7 @@ public class ConsoleUI {
             System.out.println("8. Compare Players");
             System.out.println("9. Save to File");
             System.out.println("10. Load from File");
+            System.out.println("11. Sorting/Ranking");
             System.out.println("0. Exit");
             System.out.print("Choose option: ");
 
@@ -50,6 +51,7 @@ public class ConsoleUI {
                 case 8 -> comparePlayersUI();
                 case 9 -> saveUI();
                 case 10 -> loadUI();
+                case 11 -> sortingMenu();
                 case 0 -> running = false;
                 default -> System.out.println("Invalid choice.");
             }
@@ -261,6 +263,48 @@ public class ConsoleUI {
             System.out.println("Players loaded and added to system.");
         } catch (Exception e) {
             System.out.println("Error loading file: " + e.getMessage());
+        }
+    }
+    private void sortingMenu() {
+        boolean loop = true;
+
+        while (loop) {
+            System.out.println("\n=== SORTING & RANKINGS ===");
+            System.out.println("1. Sort by Goals");
+            System.out.println("2. Sort by Assists");
+            System.out.println("3. Sort by Market Value");
+            System.out.println("4. Sort by Age");
+            System.out.println("5. Sort by Height");
+            System.out.println("6. Sort by Name (A–Z)");
+            System.out.println("7. Sort by Nationality");
+            System.out.println("8. Sort by Position");
+            System.out.println("0. Back");
+            System.out.print("Choose option: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            List<Player> result = null;
+
+            switch (choice) {
+                case 1 -> result = manager.highestScorers();
+                case 2 -> result = manager.mostAssists();
+                case 3 -> result = manager.sortByMarketValue();
+                case 4 -> result = manager.sortByAge();
+                case 5 -> result = manager.sortByHeight();
+                case 6 -> result = manager.sortByName();
+                case 7 -> result = manager.sortByNationality();
+                case 8 -> result = manager.sortByPosition();
+                case 0 -> loop = false;
+                default -> System.out.println("Invalid choice.");
+            }
+
+            if (result != null) {
+                for (Player p : result) {
+                    System.out.println("--------------------------");
+                    System.out.println(p.displayInfo());
+                }
+            }
         }
     }
 }

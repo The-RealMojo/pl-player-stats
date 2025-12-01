@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.MainController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Premier League Player Manager"
+           style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+
+    <Button text="View All Players" fx:id="btnShowAll" prefWidth="220"/>
+    <Button text="Add Player" fx:id="btnAdd" prefWidth="220"/>
+    <Button text="Search Player" fx:id="btnSearch" prefWidth="220"/>
+    <Button text="Filter Players" fx:id="btnFilter" prefWidth="220"/>
+    <Button text="Transfer Player" fx:id="btnTransfer" prefWidth="220"/>
+    <Button text="Compare Players" fx:id="btnCompare" prefWidth="220"/>
+    <Button text="Save to File" fx:id="btnSave" prefWidth="220"/>
+    <Button text="Load from File" fx:id="btnLoad" prefWidth="220"/>
+
+</VBox>
