@@ -15,7 +15,7 @@
     </padding>
 
     <Label text="Premier League Player Management System"
-           style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+           styleClass="title" />
 
     <Button text="View All Players" fx:id="btnShowAll" prefWidth="220"/>
     <Button text="Add Player" fx:id="btnAdd" prefWidth="220"/>

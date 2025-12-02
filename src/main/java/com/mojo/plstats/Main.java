@@ -13,6 +13,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/MainView.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
         stage.setTitle("Premier League Player System");
         stage.setScene(scene);
@@ -23,4 +24,3 @@ public class Main extends Application {
         launch();
     }
 }
-

@@ -11,7 +11,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
 
 public class ViewPlayersController {
 
@@ -57,8 +56,8 @@ public class ViewPlayersController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainView.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) btnBack.getScene().getWindow();
-            stage.setScene(new Scene(root, 800, 600));
+            Scene scene = btnBack.getScene();
+            scene.setRoot(root);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
