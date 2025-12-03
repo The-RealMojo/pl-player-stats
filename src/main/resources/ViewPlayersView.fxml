@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
@@ -8,22 +9,26 @@
 
 <VBox xmlns="http://javafx.com/javafx/21.0.2"
       xmlns:fx="http://javafx.com/fxml/1"
-      spacing="10" alignment="CENTER"
+      spacing="12" alignment="CENTER"
       fx:controller="com.mojo.plstats.ui.ViewPlayersController">
 
-    <Label text="All Players" style="-fx-font-size: 24;" />
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
 
-    <TableView fx:id="playersTable" prefWidth="700" prefHeight="500">
+    <Label text="All Players" styleClass="title" />
+
+    <TableView fx:id="playersTable" prefWidth="720" prefHeight="500">
         <columns>
-            <TableColumn text="Name" prefWidth="120" fx:id="colName"/>
-            <TableColumn text="Age" prefWidth="60" fx:id="colAge"/>
-            <TableColumn text="Club" prefWidth="100" fx:id="colClub"/>
-            <TableColumn text="Position" prefWidth="80" fx:id="colPosition"/>
-            <TableColumn text="Goals" prefWidth="60" fx:id="colGoals"/>
-            <TableColumn text="Assists" prefWidth="60" fx:id="colAssists"/>
+            <TableColumn text="Name" prefWidth="140" fx:id="colName"/>
+            <TableColumn text="Age" prefWidth="70" fx:id="colAge"/>
+            <TableColumn text="Club" prefWidth="120" fx:id="colClub"/>
+            <TableColumn text="Position" prefWidth="90" fx:id="colPosition"/>
+            <TableColumn text="Goals" prefWidth="70" fx:id="colGoals"/>
+            <TableColumn text="Assists" prefWidth="70" fx:id="colAssists"/>
         </columns>
     </TableView>
 
-    <Button text="Back" fx:id="btnBack" prefWidth="150"/>
+    <Button text="Back" fx:id="btnBack" prefWidth="180"/>
 
 </VBox>
