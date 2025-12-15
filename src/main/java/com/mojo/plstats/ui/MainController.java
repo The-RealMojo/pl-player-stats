@@ -21,6 +21,8 @@ public class MainController {
     @FXML
     private Button btnMostAssists;
     @FXML
+    private Button btnUpdateStats;
+    @FXML
     private Button btnTransfer;
     @FXML
     private Button btnCompare;
@@ -37,6 +39,7 @@ public class MainController {
         btnFilter.setOnAction(e -> loadScreen("FilterPlayersView.fxml"));
         btnHighestScorers.setOnAction(e -> loadScreen("HighestScorersView.fxml"));
         btnMostAssists.setOnAction(e -> loadScreen("MostAssistsView.fxml"));
+        btnUpdateStats.setOnAction(e -> loadScreen("UpdatePlayerStatsView.fxml"));
         btnTransfer.setOnAction(e -> loadScreen("TransferPlayerView.fxml"));
         btnCompare.setOnAction(e -> loadScreen("ComparePlayersView.fxml"));
         btnSave.setOnAction(e -> loadScreen("SavePlayersView.fxml"));

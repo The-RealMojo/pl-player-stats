@@ -16,7 +16,7 @@ OUT,Darwin Nunez,25,Liverpool,CF,11,6,true,187,Uruguay,R,55.0,0
 GK,Robert Sanchez,26,Chelsea,GK,0,0,true,197,Spain,R,30.0,9
 OUT,Thiago Silva,40,Chelsea,CB,1,0,true,183,Brazil,R,2.0,0
 OUT,Enzo Fernandez,23,Chelsea,CM,3,4,true,178,Argentina,R,70.0,0
-OUT,Cole Palmer,22,Chelsea,RW,10,7,true,185,England,L,80.0,0
+OUT,Cole Palmer,22,Chelsea,RW,16,15,true,185,England,L,80.0,0
 OUT,Nicolas Jackson,23,Chelsea,CF,9,4,true,186,Senegal,R,45.0,0
 GK,Andre Onana,29,Man United,GK,0,1,true,190,Cameroon,R,35.0,11
 OUT,Lisandro Martinez,26,Man United,CB,1,1,true,175,Argentina,L,30.0,0

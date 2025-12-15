@@ -142,6 +142,23 @@ public abstract class Player {
         this.club = validateClub(newClub);
     }
 
+    // --- Updatable stats ---
+    public void setGoals(int goals) {
+        this.goals = validateGoals(goals);
+    }
+
+    public void setAssists(int assists) {
+        this.assists = validateAssists(assists);
+    }
+
+    public void setMarketValue(double marketValue) {
+        this.marketValue = validateMarketValue(marketValue);
+    }
+
+    public void setAvailable(boolean available) {
+        this.isAvailable = available;
+    }
+
     public String displayInfo() {
         return String.format(
                 """
