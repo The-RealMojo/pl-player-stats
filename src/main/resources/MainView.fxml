@@ -5,28 +5,47 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="15" alignment="CENTER"
+<VBox spacing="20" alignment="CENTER"
       xmlns="http://javafx.com/javafx/21.0.2"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.mojo.plstats.ui.MainController">
 
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets top="32" right="32" bottom="32" left="32"/>
     </padding>
 
-    <Label text="Premier League Player Management System"
-           styleClass="title" />
+    <!-- Centered card with all main actions -->
+    <VBox spacing="16" alignment="CENTER" styleClass="card">
 
-    <Button text="View All Players" fx:id="btnShowAll" prefWidth="220"/>
-    <Button text="Add Player" fx:id="btnAdd" prefWidth="220"/>
-    <Button text="Search Player" fx:id="btnSearch" prefWidth="220"/>
-    <Button text="Filter Players" fx:id="btnFilter" prefWidth="220"/>
-    <Button text="Highest Scorers" fx:id="btnHighestScorers" prefWidth="220"/>
-    <Button text="Most Assists" fx:id="btnMostAssists" prefWidth="220"/>
-    <Button text="Update Player Stats" fx:id="btnUpdateStats" prefWidth="220"/>
-    <Button text="Transfer Player" fx:id="btnTransfer" prefWidth="220"/>
-    <Button text="Compare Players" fx:id="btnCompare" prefWidth="220"/>
-    <Button text="Save to File" fx:id="btnSave" prefWidth="220"/>
-    <Button text="Load from File" fx:id="btnLoad" prefWidth="220"/>
+        <Label text="Premier League Player Management System"
+               styleClass="title" />
+
+        <Label text="Manage players, explore stats, and keep your squad data up to date."
+               styleClass="subtitle"/>
+
+        <!-- Core player actions -->
+        <VBox spacing="8" alignment="CENTER">
+            <Button text="View All Players" fx:id="btnShowAll" prefWidth="240"/>
+            <Button text="Add Player" fx:id="btnAdd" prefWidth="240"/>
+            <Button text="Search Player" fx:id="btnSearch" prefWidth="240"/>
+            <Button text="Filter Players" fx:id="btnFilter" prefWidth="240"/>
+            <Button text="Update Player Stats" fx:id="btnUpdateStats" prefWidth="240"/>
+        </VBox>
+
+        <!-- Insights & comparisons -->
+        <VBox spacing="8" alignment="CENTER">
+            <Button text="Highest Scorers" fx:id="btnHighestScorers" prefWidth="240"/>
+            <Button text="Most Assists" fx:id="btnMostAssists" prefWidth="240"/>
+            <Button text="Compare Players" fx:id="btnCompare" prefWidth="240"/>
+        </VBox>
+
+        <!-- Data & file actions -->
+        <VBox spacing="8" alignment="CENTER">
+            <Button text="Transfer Player" fx:id="btnTransfer" prefWidth="240"/>
+            <Button text="Save to File" fx:id="btnSave" prefWidth="240"/>
+            <Button text="Load from File" fx:id="btnLoad" prefWidth="240"/>
+        </VBox>
+
+    </VBox>
 
 </VBox>
