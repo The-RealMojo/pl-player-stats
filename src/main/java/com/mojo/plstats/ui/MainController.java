@@ -13,6 +13,8 @@ public class MainController {
     @FXML
     private Button btnAdd;
     @FXML
+    private Button btnFetchAPI;
+    @FXML
     private Button btnSearch;
     @FXML
     private Button btnFilter;
@@ -35,6 +37,7 @@ public class MainController {
     public void initialize() {
         btnShowAll.setOnAction(e -> loadScreen("ViewPlayersView.fxml"));
         btnAdd.setOnAction(e -> loadScreen("AddPlayerView.fxml"));
+        btnFetchAPI.setOnAction(e -> loadScreen("FetchPlayerFromAPIView.fxml"));
         btnSearch.setOnAction(e -> loadScreen("SearchPlayerView.fxml"));
         btnFilter.setOnAction(e -> loadScreen("FilterPlayersView.fxml"));
         btnHighestScorers.setOnAction(e -> loadScreen("HighestScorersView.fxml"));
