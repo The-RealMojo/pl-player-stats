@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.FilterPlayersController"
+      spacing="12" alignment="CENTER">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label text="Filter Players" styleClass="title"/>
+
+    <TextField fx:id="txtClub" promptText="Club (optional)" prefWidth="320"/>
+    <TextField fx:id="txtPosition" promptText="Position (optional)" prefWidth="320"/>
+    <TextField fx:id="txtAge" promptText="Age (optional)" prefWidth="320"/>
+
+    <Button text="Apply Filters" fx:id="btnFilter" prefWidth="180"/>
+
+    <TextArea fx:id="txtResult" prefRowCount="10" prefWidth="520" editable="false"/>
+
+    <Button text="Back" fx:id="btnBack" prefWidth="180"/>
+
+</VBox>
