@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.SavePlayersController"
+      spacing="12" alignment="CENTER">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label text="Save Players to File" styleClass="title"/>
+
+    <TextField fx:id="txtPath" promptText="File path (e.g. players.txt)" prefWidth="320"/>
+
+    <Button text="Save" fx:id="btnSave" prefWidth="180"/>
+    <Label fx:id="lblStatus"/>
+
+    <Button text="Back" fx:id="btnBack" prefWidth="180"/>
+
+</VBox>

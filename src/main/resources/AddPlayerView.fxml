@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.AddPlayerController"
+      spacing="8" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Add Player" style="-fx-font-size: 22;" />
+
+    <TextField fx:id="txtName" promptText="Name"/>
+    <TextField fx:id="txtAge" promptText="Age"/>
+    <TextField fx:id="txtClub" promptText="Club"/>
+    <TextField fx:id="txtPosition" promptText="Position (GK, CB, LB, RB, CM, DM, AM, LW, RW, CF)"/>
+    <TextField fx:id="txtGoals" promptText="Goals"/>
+    <TextField fx:id="txtAssists" promptText="Assists"/>
+    <TextField fx:id="txtAvailable" promptText="Available (true/false)"/>
+    <TextField fx:id="txtHeight" promptText="Height (cm)"/>
+    <TextField fx:id="txtNationality" promptText="Nationality"/>
+    <TextField fx:id="txtPreferredFoot" promptText="Preferred Foot (L/R)"/>
+    <TextField fx:id="txtMarketValue" promptText="Market Value (million)"/>
+    <TextField fx:id="txtCleanSheets" promptText="Clean Sheets (GK only)"/>
+
+    <Label fx:id="lblStatus" textFill="red"/>
+
+    <Button text="Save" fx:id="btnSave" prefWidth="150"/>
+    <Button text="Back" fx:id="btnBack" prefWidth="150"/>
+
+</VBox>

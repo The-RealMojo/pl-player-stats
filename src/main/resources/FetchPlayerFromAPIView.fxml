@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.FetchPlayerFromAPIController"
+      spacing="12" alignment="CENTER">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label text="Fetch Player from API" styleClass="title"/>
+
+    <Label text="Search for players from external API sources" 
+           style="-fx-text-fill: #9ca3af; -fx-font-size: 13px;"/>
+
+    <HBox spacing="8" alignment="CENTER">
+        <TextField fx:id="txtPlayerName" promptText="Enter player name" prefWidth="320"/>
+        <Button text="Search Player" fx:id="btnSearchPlayer" prefWidth="180"/>
+    </HBox>
+
+    <Label fx:id="lblStatus" text="Ready to search" 
+           style="-fx-text-fill: #9ca3af; -fx-font-size: 12px;"/>
+
+    <TextArea fx:id="txtResult" prefRowCount="12" prefWidth="520" editable="false"/>
+
+    <Button text="Add to System" fx:id="btnAddToSystem" prefWidth="180"/>
+
+    <Button text="Back" fx:id="btnBack" prefWidth="180" styleClass="secondary"/>
+
+</VBox>
+

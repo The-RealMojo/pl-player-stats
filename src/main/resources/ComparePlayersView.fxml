@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mojo.plstats.ui.ComparePlayersController"
+      spacing="10" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Compare Players" style="-fx-font-size: 22;"/>
+
+    <TextField fx:id="txtP1" promptText="First player name"/>
+    <TextField fx:id="txtP2" promptText="Second player name"/>
+
+    <Button text="Compare" fx:id="btnCompare" prefWidth="150"/>
+
+    <TextArea fx:id="txtResult" prefRowCount="10" prefWidth="450" editable="false"/>
+
+    <Button text="Back" fx:id="btnBack" prefWidth="150"/>
+
+</VBox>
+
