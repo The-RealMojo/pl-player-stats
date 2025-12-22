@@ -21,12 +21,8 @@ public class SavePlayersController {
 
     private final PlayerManager manager = PlayerManager.getInstance();
 
-    private static final String DEFAULT_DATABASE_FILE = "players.txt";
-
     @FXML
     public void initialize() {
-        // Pre-fill with default database file
-        txtPath.setText(DEFAULT_DATABASE_FILE);
         btnSave.setOnAction(e -> save());
         btnBack.setOnAction(e -> goBack());
     }
