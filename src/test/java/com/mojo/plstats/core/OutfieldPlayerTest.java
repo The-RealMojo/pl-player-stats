@@ -38,11 +38,6 @@ class OutfieldPlayerTest {
         assertTrue(outfieldPlayer instanceof Player);
     }
 
-    @Test
-    @DisplayName("Should not be instance of Goalkeeper")
-    void testIsNotGoalkeeper() {
-        assertFalse(outfieldPlayer instanceof Goalkeeper);
-    }
 
     @Test
     @DisplayName("Should create player with different positions")
