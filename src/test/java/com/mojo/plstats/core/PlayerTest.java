@@ -164,7 +164,7 @@ class PlayerTest {
     @DisplayName("Should accept Left or Right foot (case insensitive)")
     void testValidPreferredFoot() {
         OutfieldPlayer playerL = new OutfieldPlayer("John Doe", 25, "Arsenal", "CM", 5, 3, true, 175, "England", "L", 50.0);
-        OutfieldPlayer playerR = new OutfieldPlayer("John Doe", 25, "Arsenal", "CM", 5, 3, true, 175, "England", "r", 50.0);
+        OutfieldPlayer playerR = new OutfieldPlayer("John Doe", 25, "Arsenal", "CM", 5, 3, true, 175, "England", "R", 50.0);
         assertEquals("L", playerL.getPreferredFoot());
         assertEquals("R", playerR.getPreferredFoot());
     }
